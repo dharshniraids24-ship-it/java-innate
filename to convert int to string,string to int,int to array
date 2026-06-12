@@ -1,0 +1,29 @@
+import java.util.Arrays;
+
+public class ConversionsDemo {
+
+    public static void main(String[] args) {
+
+        // int to String
+        int number = 12345;
+        String str = String.valueOf(number);
+        System.out.println("int to String: " + str);
+
+        // String to int
+        String strNumber = "67890";
+        int convertedInt = Integer.parseInt(strNumber);
+        System.out.println("String to int: " + convertedInt);
+
+        // int to int[] (array of digits)
+        int num = 54321;
+        String numStr = String.valueOf(num);
+
+        int[] digits = new int[numStr.length()];
+
+        for (int i = 0; i < numStr.length(); i++) {
+            digits[i] = numStr.charAt(i) - '0';
+        }
+
+        System.out.println("int to int[]: " + Arrays.toString(digits));
+    }
+}
