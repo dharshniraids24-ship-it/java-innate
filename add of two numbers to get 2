@@ -1,0 +1,29 @@
+import java.util.HashSet;
+
+public class TwoSum {
+    public static boolean hasPairWithSumTwo(int[] arr) {
+        HashSet<Integer> set = new HashSet<>();
+
+        for (int num : arr) {
+            int complement = 2 - num;
+
+            if (set.contains(complement)) {
+                return true;
+            }
+
+            set.add(num);
+        }
+
+        return false;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 5, 3, 1, 7};
+
+        if (hasPairWithSumTwo(arr)) {
+            System.out.println("Found a pair with sum 2");
+        } else {
+            System.out.println("No pair found with sum 2");
+        }
+    }
+}
