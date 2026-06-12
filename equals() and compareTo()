@@ -1,0 +1,9 @@
+public class StringFunctions6 {
+    public static void main(String[] args) {
+        String s1 = "Apple";
+        String s2 = "Banana";
+
+        System.out.println("Equals: " + s1.equals(s2));
+        System.out.println("CompareTo: " + s1.compareTo(s2));
+    }
+}
