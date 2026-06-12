@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class RetainAllDemo {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(10, 20, 30, 40, 50));
+
+        ArrayList<Integer> keep = new ArrayList<>(Arrays.asList(20, 50, 100));
+
+        list.retainAll(keep);
+
+        System.out.println("After retainAll: " + list);
+    }
+}
