@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class CapacityDemo {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+
+        list.ensureCapacity(20);
+
+        list.add(1);
+        list.add(2);
+
+        System.out.println("List: " + list);
+    }
+}
