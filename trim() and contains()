@@ -1,0 +1,10 @@
+public class StringFunctions5 {
+    public static void main(String[] args) {
+        String str = "   Hello World   ";
+
+        System.out.println("Before trim: [" + str + "]");
+        System.out.println("After trim: [" + str.trim() + "]");
+
+        System.out.println("Contains 'World'? " + str.contains("World"));
+    }
+}
