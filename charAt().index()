@@ -1,0 +1,8 @@
+public class StringFunctions2 {
+    public static void main(String[] args) {
+        String str = "Programming";
+
+        System.out.println("Character at index 3: " + str.charAt(3));
+        System.out.println("Index of 'g': " + str.indexOf('g'));
+    }
+}
