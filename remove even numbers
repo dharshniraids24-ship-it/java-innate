@@ -1,0 +1,28 @@
+public class RemoveEvenNumbers {
+    public static void main(String[] args) {
+
+        String str = "a1b2c3d4e5f6";
+
+        String result = "";
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            // check if character is a digit
+            if (Character.isDigit(ch)) {
+                int num = ch - '0';
+
+                // keep only odd digits
+                if (num % 2 != 0) {
+                    result = result + ch;
+                }
+            } else {
+                // keep non-digit characters
+                result = result + ch;
+            }
+        }
+
+        System.out.println("Original String: " + str);
+        System.out.println("After removing even numbers: " + result);
+    }
+}
