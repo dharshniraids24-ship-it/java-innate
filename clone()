@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+
+public class CloneDemo {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+
+        list.add("Java");
+        list.add("Python");
+
+        ArrayList<String> copy = (ArrayList<String>) list.clone();
+
+        System.out.println("Original: " + list);
+        System.out.println("Cloned: " + copy);
+    }
+}
