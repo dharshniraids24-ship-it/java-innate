@@ -1,0 +1,10 @@
+public class ReplaceFirstExample {
+    public static void main(String[] args) {
+        String str = "Java is fun. Java is powerful.";
+
+        String result = str.replaceFirst("Java", "Python");
+
+        System.out.println("Original: " + str);
+        System.out.println("After replaceFirst: " + result);
+    }
+}
