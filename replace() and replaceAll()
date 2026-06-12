@@ -1,0 +1,8 @@
+public class StringFunctions4 {
+    public static void main(String[] args) {
+        String str = "I like Java. Java is powerful.";
+
+        System.out.println(str.replace("Java", "Python"));
+        System.out.println(str.replaceAll("Java", "C++"));
+    }
+}
