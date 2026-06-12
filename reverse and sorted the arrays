@@ -1,0 +1,30 @@
+import java.util.Arrays;
+
+public class ReverseAndSortArray {
+    public static void main(String[] args) {
+
+        int[] arr = {50, 10, 40, 20, 30};
+
+        System.out.println("Original Array:");
+        printArray(arr);
+
+        // Reverse array
+        System.out.println("\nReversed Array:");
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+
+        // Sort array
+        Arrays.sort(arr);
+
+        System.out.println("\n\nSorted Array (Ascending):");
+        printArray(arr);
+    }
+
+    // Helper method to print array
+    public static void printArray(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
