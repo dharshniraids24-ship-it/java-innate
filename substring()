@@ -1,0 +1,10 @@
+public class StringFunctions3 {
+    public static void main(String[] args) {
+        String str = "Welcome to Java Programming";
+
+        String part = str.substring(11, 15);
+
+        System.out.println("Original String: " + str);
+        System.out.println("Substring (11 to 15): " + part);
+    }
+}
