@@ -1,0 +1,14 @@
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        String[] subject = {"Math", "Science", "English"};
+        int[] mark = {95, 88, 76};
+
+        String subjectString = Arrays.toString(subject);
+        String markString = Arrays.toString(mark);
+
+        System.out.println("Subjects: " + subjectString);
+        System.out.println("Marks: " + markString);
+    }
+}
