@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class RemoveIfDemo {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(10, 15, 20, 25, 30));
+
+        list.removeIf(n -> n % 2 == 0); // remove even numbers
+
+        System.out.println("After removeIf: " + list);
+    }
+}
